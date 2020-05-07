@@ -46,7 +46,7 @@ export class PhotoswipeService {
       return {
         html: `
         <div style="height:100%;">
-          <video poster="${file.thumbnail_url}" controls style="height:100%;width:100%;">
+          <video poster="${file.thumbnail_url}" controls style="height:100%;width:100%;" preload="none">
             <source src="${file.file_url}">
           </video>
         </div>`
