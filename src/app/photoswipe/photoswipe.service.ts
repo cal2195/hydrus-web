@@ -45,7 +45,7 @@ export class PhotoswipeService {
     } else if(file.file_type === HydrusFileType.Video) {
       return {
         html: `
-        <div style="height:100%;">
+        <div style="height:900%;">
           <video poster="${file.thumbnail_url}" controls style="height:100%;width:100%;" preload="none">
             <source src="${file.file_url}" type="${file.mime}">
           </video>
